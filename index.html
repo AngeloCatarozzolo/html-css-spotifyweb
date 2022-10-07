@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- flex container(100vh) con dentro  tutto il contenuto -->
+        <div class="flex container">
+                <!-- sidebvar laterale -->
+                <div class="flex sidebar">
+                    <div class="logo">
+                        <img class="show"src="./img/logo.svg" alt="logo">
+                        <img class="hidden" src="./img/favicon.ico" alt="logo2">
+                    </div>
+                    <div class="sezione funzioni">
+                        <div class="icon bverde">
+                            <img src="./img/home.svg" alt="home">
+                            <span class="white">Home</span>
+                        </div>
+                        <div class="icon bblack">
+                            <img src="./img/search.svg" alt="search">
+                            <span class="gray">Cerca</span>
+                        </div>
+                        <div class="icon bblack">
+                            <img src="./img/libreria.svg" alt="libreria">
+                            <span class="gray">La tua libreria</span>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <h3 class="white">Playlist</h3>
+                        <div class="hover plus">
+                            <span>+</span>
+                        </div>
+                        <div class="hover gray">Crea Playlist</div>
+                    </div>
+                    <div class="scrollbar">
+                        <ul class="vlist">
+                            <li><a href="">Good Vibes</a></li>
+                            <li><a href="">Chill</a></li>
+                            <li><a href="">Palestra</a></li>
+                            <li><a href="">Heavy Metal</a></li>
+                            <li><a href="">Soundtrack</a></li>
+                            <li><a href="">Rap</a></li>
+                            <li><a href="">Nuova Playlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="sezione gestione">  
+                        <div class="hover download">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <span class="gray">Installa app</span>
+                        </div>
+                        <div class="icon profile">
+                            <img class="profilo" src="./img/profile.svg" alt="profile">
+                            <span class="white">Angelo Catarozzolo</span>
+                        </div>
+                    </div>  
+                </div>
+                <!-- un container centrale con dentro nav bar e contenuto pagina  -->
+                <div class="flex central">
+                        <div class="flex top">
+                            <button class="upgrade">EFFETTUA L'UPGRADE</button>
+                        </div>
+                        <div class="flex content">
+                            <div class="flex navbar">
+                                <ul>
+                                    <li><a href="">IN EVIDENZA</a> <div class="bgreen"></div> </li>
+                                    <li><a href="">PODCAST</a></li>
+                                    <li><a href="">CLASSIFICHE</a></li>
+                                    <li><a href="">GENERI E MOOD</a></li>
+                                    <li><a href="">NUOVE USCITE</a></li>
+                                    <li><a href="">SCOPRI</a></li>
+                                </ul>
+                            </div>
+                            <h2>Recently Played</h2>
+                            <div class="flex recenti">
+                                <div class="album">
+                                    <div class="immagine">
+                                            <div class="background">
+                                                <i class="far fa-play-circle"></i> 
+                                            </div>
+                                            <img src="./img/metal_lifting.jpg" alt="heavymetal">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>Heavy metal</h4>
+                                        <span class="gray">subtitle</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/stranger.jpeg" alt="stranger">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>Stranger Thinghs,Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                        <span class="gray">Kyle Dixon & Michael Stein</span>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>A quiet place</h4>
+                                        <span class="gray">subtitle</span>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/split.jpeg" alt="split">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>Split</h4>
+                                        <span class="gray">subtitle</span>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/cure.jpeg" alt="cure">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>A cure for wellness</h4>
+                                        <span class="gray">subtitle</span>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/sinister.jpeg" alt="sinister">
+                                    </div>
+                                    <div class="titoli">
+                                        <h4>Sinister</h4>
+                                        <span class="gray">subtitle</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Creato per Angelo Catarozzolo</h2>
+                            <span class="gray commenti">Più ascolti,più accurati saranno i suggerimenti.</span>
+                            <div class="flex perte">
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/radar.jpeg" alt="radar">
+                                    </div>
+                                    <div class="titoli">
+                                      <h4>Release Radar</h4>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="immagine">
+                                        <div class="background">
+                                            <i class="far fa-play-circle"></i> 
+                                        </div>
+                                        <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                                    </div>
+                                    <div class="titoli">
+                                      <h4>Daily Mix 1</h4>
+                                    </div>
+                                </div>
+                                <div class="vuoto album"></div>
+                                <div class="vuoto album"></div>
+                                <div class="vuoto album"></div>
+                            </div>
+                            <h2>Artisti più popolari</h2>
+                            <span class="gray commenti">Più ascolti,più accurati saranno i suggerimenti.</span>
+                            <div class="flex artisti">
+                                <div class="album">
+                                    <img src="./img/youg.jpeg" alt="young">
+                                    <div class="titoli">
+                                      <h4>Lana del Rey</h4>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <img src="./img/einaudi.jpeg" alt="einaudi">
+                                    <div class="titoli">
+                                      <h4>Ludovico Einaudi</h4>
+                                    </div>
+                                </div>
+                                <div class="vuoto album"></div>
+                                <div class="vuoto album"></div>
+                                <div class="vuoto album"></div>
+                            </div>
+                        </div>
+                </div>
+                <!-- footer di pagina -->
+                <footer>
+                    <div class="flex player-left">
+                        <div class="imgpiccola">
+                            <img src="./img/sinister.jpeg" alt="Sinister">
+                        </div>
+                        <div class="song">
+                            <h5 class="white">Sinister</h5>
+                            <p class="hover gray">Brano Nome</p>
+                        </div>
+                        <div class="flex gray save">
+                            <i class="hover far fa-heart"></i>
+                            <i class="hover far fa-folder"></i>
+                        </div>
+                    </div>
+                    <div class="flex player-central">
+                        <div class="white function">
+                            <i class="small fas fa-random"></i>
+                            <i class="small fas fa-step-backward"></i>
+                            <i class="far fa-play-circle"></i>
+                            <i class="small fas fa-step-forward"></i>
+                            <i class="small fas fa-redo-alt"></i>
+                        </div>
+                        <div class="flex white time">
+                            <span>0:25</span>
+                            <input type="range">
+                            <span>4:35</span>
+                        </div>
+                    </div>
+                    <div class="flex player-right">
+                        <i class="white fas fa-bars"></i>
+                        <i class="white fas fa-desktop"></i>
+                        <i class="white fas fa-volume-up"></i>
+                        <input type="range">
+                    </div>
+                </footer>
+        </div>
+</body>
+</html>

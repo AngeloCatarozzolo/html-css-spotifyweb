@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.white{
+    color: white;
+}
+
+.gray{
+    color:gray;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+/* ------------- */
+
+.container{
+    height:100vh;
+    flex-wrap: wrap;
+}
+
+/*----------
+    SIDEBAR
+----------*/
+.sidebar{
+    background-color: black;
+    height: calc(100% - 80px);
+    width: 250px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo{
+    width:100%;
+    height:15%;
+    padding: 20px;
+}
+
+.logo>img{
+    width: 150px;
+}
+
+.icon{
+    position: relative;
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.bverde{
+    border-left: 3px solid chartreuse;
+}
+
+.icon>img{
+   width:20px;
+   height:20px;
+}
+
+.icon>span{
+    position: absolute;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.bblack{
+    border-left:3px solid black;
+}
+
+.playlist{
+    height: 10%;
+    padding-left: 13px;
+    margin-top:20px;
+}
+
+.playlist>.white{
+    margin-bottom: 10px;
+}
+
+.playlist>.gray{
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.plus{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    text-align: center;
+    line-height:20px;
+    margin-right: 5px;
+}
+
+.plus>span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.scrollbar{
+    flex-grow: 1;
+    min-height: 150px;
+    overflow-y: auto;
+    padding-left: 13px;
+}
+
+.vlist li{
+    padding: 8px 0;
+}
+
+.vlist li a{
+    color:gray;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.gestione{
+    padding-left: 13px;
+}
+
+.download{
+    margin-bottom: 15px;
+    height: 25px;
+    width: 215px;
+    color: grey;
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+}
+.download>span{
+    margin-left: 5px;
+}
+
+.profilo{
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.profile{
+    padding-left: 0;
+}
+
+
+/*----------
+    FINE SIDEBAR
+----------*/
+
+.central{
+    width:calc(100% - 250px);
+    height: calc(100% - 80px);
+    
+}
+
+/*----------
+    TOP
+----------*/
+
+.top{
+    background-color:rgba(0, 0, 0, 0.7) ;
+    width:calc(100% - 250px);
+    position: fixed;
+    z-index: 1000;
+    height: 80px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.upgrade{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 0 40px;
+    height: 35px;
+    border-radius:20px;
+    border:1px solid white;
+}
+
+/*----------
+    FINE TOP
+----------*/
+
+/*---------- 
+    CONTENT
+----------*/
+.content{
+    flex-direction: column;
+    color: white;
+    overflow-y: scroll;
+    width:100%;
+    height:100%;
+    background-color: #171823;
+    padding-top: 100px; 
+    padding-left:20px;
+}
+
+.navbar{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding:0 20px;
+    color:gray;
+    font-size: 14px;
+}
+
+.bgreen{
+    width: 35px;
+    height: 1px;
+    border-bottom: 3px solid lime;
+    margin-left: 49px;
+}
+
+.recenti,.perte,.artisti{
+    margin-top: 20px;
+    width:100%; 
+}
+
+.album{
+   max-width:200px;
+   min-width: 180px;
+   height:240px;
+   margin-bottom: 70px;
+   padding-right: 15px;
+}
+
+.immagine{
+    width:100%;
+    height: 77%;
+    position: relative;
+}
+
+.immagine>img{
+    width:100%;
+    height: 100%;
+}
+.background{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: none;
+    
+}
+
+.background>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.album>img{
+    width: 100%;
+    
+}
+
+/* ---prova hover immagini---*/
+.album:hover .background{
+    display:block;
+}
+/*----------*/
+
+.titoli{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.titoli>h4{
+    margin-bottom: 5px;
+}
+
+.titoli>span{
+    font-size: 13px;
+}
+
+.content>h2{
+    margin-top:20px;
+}
+
+.commenti{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+.artisti>.album>img{
+    border-radius: 50%;
+}
+
+/*----------
+    FINE CONTENT
+----------*/
+
+/*----------
+    FOOTER
+----------*/
+footer{
+    display: flex;
+    height:80px;
+    width: 100%;
+    background-color: #191919;
+}
+
+.player-left,.player-right{
+    height:100%;
+    width:250px;
+    max-width:calc(100%/3);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-central{
+    width: calc(100% - 500px);
+    flex-grow: 1;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgpiccola{
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+.imgpiccola>img{
+    width: 100%;
+}
+
+.song{
+    margin-right: 35px;
+}
+
+.song>p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.fa-folder{
+    margin-left: 15px;
+}
+
+.player-right{
+    font-size: 14px;
+    padding-right: 14px;
+}
+.function{
+  margin-top: 10px;
+}
+
+.function>i{
+    padding:0 10px;
+}
+
+.small{
+    font-size: 16px;
+}
+
+.function>.far{
+    font-size: 20px;
+}
+
+.time>span{
+    font-size: 10px;
+    margin: 20px;
+}
+
+/*----------
+    FINE FOOTER
+----------*/
+
+/*----------
+    HOVER
+----------*/
+.hover:hover{
+    color: white;
+    cursor:pointer
+}
+.upgrade:hover{
+    font-size: 15px;
+    cursor: pointer;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+.icon>span:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.vlist li a:hover{
+    color: white;
+    cursor: pointer;
+}
+.download>.gray:hover{
+    color:white;
+    cursor: pointer;
+}
+.small:hover{
+   font-size: 20px;
+}
+.function>.fa-play-circle:hover{
+   font-size: 25px;
+}
+img:hover{
+    cursor: pointer;
+}
+/*----------
+    FINE HOVER
+----------*/
+
+/* ---dimensioni medie come screen-- */
+@media screen and (min-width:575px) and (max-width:1300px) {
+   
+    .recenti,.perte,.artisti{
+        flex-wrap: wrap;
+    }
+     
+    .vuoto{
+        display: none;
+    } 
+
+    
+    .player-left,.player-right{
+        justify-content: space-around;
+    }
+    .album{
+        width:calc(100%/3);
+        margin-bottom: 105px;
+    }
+
+}
+
+/*----- MOBILE -----*/
+
+@media screen and (max-width: 575px){
+    .show{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    .sidebar{
+        width: 45px;
+        justify-content: space-between;
+    }
+    .icon>span{
+        display: none;
+    }
+    .icon>img{
+        width:30px;
+        height: 30px;
+    }
+    .playlist{
+        display: none;
+    }
+    .scrollbar{
+        display: none;
+    }
+    .download{
+        display: none;
+    }
+    .bverde{
+      border-left: none;
+    }
+    .bblack{
+        border-left: none;
+    }
+    .icon{
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+    .funzioni{
+        height:75%;
+    }
+    
+    .gestione{
+        height:6%;
+        padding-left: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+    
+    .logo>.hidden{
+        filter: invert(1);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left:0;
+        top:50px;
+    }
+   
+    .recenti,.perte,.artisti{
+        flex-wrap: wrap;
+    }
+     
+    .vuoto{
+        display: none;
+    } 
+
+    .navbar{
+        height: 160px;
+    }
+    .central{
+        width:calc(100% - 45px);
+        height: calc(100% - 80px);
+        
+    }
+    .top{
+        width:calc(100% - 45px);
+    }
+    
+    .save{
+        flex-direction: column;
+        font-size: 13px;
+    }
+    .imgpiccola{
+        margin-left: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .fa-folder{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .player-left,.player-right{
+        max-width:30%;
+        justify-content: space-around;
+    }
+
+    .song{
+        margin-right: 0;
+        margin-left: 2px;
+    }
+    .song>h5{
+        font-size: 10px;
+    }
+    .song>p{
+        font-size: 6px;
+    }
+    .player-right{
+        padding-right: 1px;
+    }
+
+    .player-right>input{
+        width: 40px;
+    }
+    .player-right>i{
+        font-size: 12px;
+    }
+
+    .function{
+       margin-bottom: 5px;
+    }
+    
+    .function>.small{
+        font-size: 10px;
+    }
+    .function>i{
+        padding: 0 5px;
+    }
+    
+    .player-central{
+        min-width: calc(100% - 60%);
+    }
+
+    .time>input{
+        width: 60px;
+    }
+
+    .time>span{
+        margin:5px
+    }
+
+    .album{
+        width:calc(100%/2);
+        min-width: 140px;
+        margin-bottom: 105px;
+    }
+
+}
